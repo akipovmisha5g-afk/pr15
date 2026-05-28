@@ -1,0 +1,9 @@
+maze = input()
+
+n = maze.index('н')
+row_n, col_n = n // 5, n % 5
+
+f = maze.index('ф')
+row_f, col_f = f // 5, f % 5
+
+print(abs(row_n - row_f) + abs(col_n - col_f))
