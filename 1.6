@@ -1,0 +1,7 @@
+maze = input()
+
+hp = 100 - maze.count('л') * 10 - maze.count('з') * 50
+if hp < 0:
+    hp = 0
+
+print('❤️' * (hp // 10) + '❤' * ((100 - hp) // 10))
