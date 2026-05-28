@@ -1,0 +1,10 @@
+maze = input()
+maze = maze.replace('0', '⬜')
+maze = maze.replace('1', '⬛')
+maze = maze.replace('л', '🔷')
+maze = maze.replace('м', '🪙')
+maze = maze.replace('ф', '🎁')
+maze = maze.replace('з', '🐷')
+maze = maze.replace('н', '⭐')
+for i in range(0, 25, 5):
+    print(maze[i:i+5])
